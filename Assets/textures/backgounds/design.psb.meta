@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 856dabbc70b5c6344aee1bc0a988a916
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: Screenshot 2023-10-12 130447
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3012
+      y: 4
+      width: 870
+      height: 192
+    spriteID: 114c0dd96c4cbd84790c91f8c569b708
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3012, y: 4}
+    spritePosition: {x: 68, y: 39}
+  - name: QUIT
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3012
+      y: 564
+      width: 225
+      height: 81
+    spriteID: 6dc8728bdfd770547b258affffae09a2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3012, y: 564}
+    spritePosition: {x: 1388, y: 429}
+  - name: OPTIONS
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3012
+      y: 484
+      width: 408
+      height: 72
+    spriteID: 04d9808ac0122d141b08baf95cf11089
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3012, y: 484}
+    spritePosition: {x: 1296, y: 590}
+  - name: START
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3797
+      y: 204
+      width: 276
+      height: 72
+    spriteID: be270157fef8c9946bdec586449480fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3797, y: 204}
+    spritePosition: {x: 1362, y: 742}
+  - name: COMPOSIA
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3012
+      y: 204
+      width: 777
+      height: 107
+    spriteID: c718576f352ff3c4ba292ad7732ff5bd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3012, y: 204}
+    spritePosition: {x: 1111, y: 1105}
+  - name: MINI GAME
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3459
+      y: 319
+      width: 557
+      height: 72
+    spriteID: efe4c63ed49311c4e9b669d4dc05ea35
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3459, y: 319}
+    spritePosition: {x: 1222, y: 988}
+  - name: Rectangle 1
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 3012
+      y: 319
+      width: 439
+      height: 157
+    spriteID: c4bda41393d9c1a4eabd4acef4fc9e42
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 3010, y: 318}
+    spritePosition: {x: 1281, y: 696}
+  - name: chaoscorpusers_city_in_rapunzel_theme_and_small_houses_in_vibra_6dbd9325-6eb8-4604-aaaf-c1ea1b252a36
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1512
+      width: 2676
+      height: 1500
+    spriteID: d08889e4232a0fd4ca49f97d2951150d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 1512}
+    spritePosition: {x: 162, y: 0}
+  - name: Background
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 3000
+      height: 1500
+    spriteID: 638fc62721d36f34e932f5b044c5e8bf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 0, y: 0}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: Screenshot 2023-10-12 130447
+    spriteName: Screenshot 2023-10-12 130447
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 114c0dd96c4cbd84790c91f8c569b708
+    layerID: 12
+    mosaicPosition: {x: 3012, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Group 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d800fd329be790d4d8224ffa0654fcf0
+    layerID: 33
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: Hue/Saturation 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 7fca552dfff2061409af20494136f5d6
+    layerID: 39
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Layer 1
+    spriteName: 
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 58f78a4a7236b974f8e904fab330a6dd
+    layerID: 37
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: 8b5a9120af9a5a2f16e051b4d13d6849
+    spriteName: 
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 1d6e959ce041e6444ababc7835ac0074
+    layerID: 24
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  - name: chaoscorpusers_city_in_rapunzel_theme_and_small_houses_in_vibra_6dbd9325-6eb8-4604-aaaf-c1ea1b252a36
+    spriteName: chaoscorpusers_city_in_rapunzel_theme_and_small_houses_in_vibra_6dbd9325-6eb8-4604-aaaf-c1ea1b252a36
+    isGroup: 0
+    parentIndex: 1
+    spriteID: 5b6dc0846b6651747a8dd795f1d9cce5
+    layerID: 2
+    mosaicPosition: {x: 4, y: 1512}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: Group 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 08abdbc830994fb4ab16c37ca458dc08
+    layerID: 29
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: QUIT
+    spriteName: QUIT
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 6dc8728bdfd770547b258affffae09a2
+    layerID: 10
+    mosaicPosition: {x: 3012, y: 564}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: OPTIONS
+    spriteName: OPTIONS
+    isGroup: 0
+    parentIndex: 6
+    spriteID: 04d9808ac0122d141b08baf95cf11089
+    layerID: 9
+    mosaicPosition: {x: 3012, y: 484}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: START
+    spriteName: START
+    isGroup: 0
+    parentIndex: 6
+    spriteID: be270157fef8c9946bdec586449480fd
+    layerID: 7
+    mosaicPosition: {x: 3797, y: 204}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: COMPOSIA
+    spriteName: COMPOSIA
+    isGroup: 0
+    parentIndex: 6
+    spriteID: c718576f352ff3c4ba292ad7732ff5bd
+    layerID: 3
+    mosaicPosition: {x: 3012, y: 204}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: MINI GAME
+    spriteName: MINI GAME
+    isGroup: 0
+    parentIndex: 6
+    spriteID: efe4c63ed49311c4e9b669d4dc05ea35
+    layerID: 5
+    mosaicPosition: {x: 3459, y: 319}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Rectangle 1
+    spriteName: Rectangle 1
+    isGroup: 0
+    parentIndex: 6
+    spriteID: c4bda41393d9c1a4eabd4acef4fc9e42
+    layerID: 11
+    mosaicPosition: {x: 3012, y: 319}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: chaoscorpusers_city_in_rapunzel_theme_and_small_houses_in_vibra_6dbd9325-6eb8-4604-aaaf-c1ea1b252a36
+    spriteName: chaoscorpusers_city_in_rapunzel_theme_and_small_houses_in_vibra_6dbd9325-6eb8-4604-aaaf-c1ea1b252a36
+    isGroup: 0
+    parentIndex: 6
+    spriteID: d08889e4232a0fd4ca49f97d2951150d
+    layerID: 32
+    mosaicPosition: {x: 4, y: 1512}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Background
+    spriteName: Background
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 638fc62721d36f34e932f5b044c5e8bf
+    layerID: 1
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
