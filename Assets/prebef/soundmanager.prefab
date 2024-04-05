@@ -1,0 +1,824 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &406189108723141097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406189108723141103}
+  - component: {fileID: 406189108723141102}
+  m_Layer: 0
+  m_Name: soundmanager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406189108723141103
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406189108723141097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 554.48047, y: 165.63962, z: -14.56532}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &406189108723141102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406189108723141097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e41a522c7faaea40b0bd4390ef7100a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 0}
+  sounds:
+  - name: click
+    clip: {fileID: 8300000, guid: 4e27efe65685b204d96c942a44798d50, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: correct
+    clip: {fileID: 8300000, guid: ad263ea8a9887e74bb39de7e0282878f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: wrong
+    clip: {fileID: 8300000, guid: 53144ab4ba2f2f642bfe4db32e57559f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pop
+    clip: {fileID: 8300000, guid: a9267db4201a2c24e8cdc303eed2f77d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A0
+    clip: {fileID: 8300000, guid: 3709afcc0f424784a98ea09f0628a288, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A1
+    clip: {fileID: 8300000, guid: 50cd69f570ca98c4fabfc63d8d2c58ff, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A2
+    clip: {fileID: 8300000, guid: dae3ed43b538a6446bdee477a910be8e, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A3
+    clip: {fileID: 8300000, guid: f53e1a875657c9a4ba06a66df42b3e9f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A4
+    clip: {fileID: 8300000, guid: a27a2fbb3b15f2244929df12349eab43, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A5
+    clip: {fileID: 8300000, guid: dfd52a3a89eeff94d81f2d303f6fe7ff, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A6
+    clip: {fileID: 8300000, guid: f9405de5efcbecb46bb7331affeb04e0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A7
+    clip: {fileID: 8300000, guid: fd0ff129497ec364ba1f7de6fe6d4630, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B2
+    clip: {fileID: 8300000, guid: dfc2e0fa04a767342be985168a231774, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B3
+    clip: {fileID: 8300000, guid: 6460a6e0fcb4f8d4d82d1784cf716e6c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B4
+    clip: {fileID: 8300000, guid: f132cc9e5f1c4df4eb5971e0fb0d9938, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C3
+    clip: {fileID: 8300000, guid: a096e0d684fd14b4db77ee00cea89ab7, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C4
+    clip: {fileID: 8300000, guid: 46198acae8c0bf34cbbff5cefbf51e3d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C5
+    clip: {fileID: 8300000, guid: 7d76afa47c1fbda4a96a3581fc271112, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D3
+    clip: {fileID: 8300000, guid: 6ab18a3bac84a5d4aae1e61922bdcc38, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D4
+    clip: {fileID: 8300000, guid: 3d619b6095e04b3468351d9cad23f700, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D5
+    clip: {fileID: 8300000, guid: e6ee357cdacdac74ebb5b0ae1325fea4, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: E3
+    clip: {fileID: 8300000, guid: bd9e29fc2ce324941b761cdd2978ec12, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: E4
+    clip: {fileID: 8300000, guid: a586d21188fb7f54eb5ccf943d007ab0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: E5
+    clip: {fileID: 8300000, guid: f8ed9638fa1ebb2449895f75d15d69c8, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F3
+    clip: {fileID: 8300000, guid: a19a4ec83aeaa3d4889d1839bbac78bd, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F4
+    clip: {fileID: 8300000, guid: 8ae8c32b365e0df4faf60ffe8539aff1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F5
+    clip: {fileID: 8300000, guid: aa1140af7344e884f995bf1919b33142, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G2
+    clip: {fileID: 8300000, guid: 41595cc06e7044c4487098c17bdfc5d3, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G3
+    clip: {fileID: 8300000, guid: d0c74eb2f23d5174993d092645eec2a7, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G4
+    clip: {fileID: 8300000, guid: bf4dce050bcf3a94081f6f3c8139a2e4, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: whole
+    clip: {fileID: 8300000, guid: 56fc45a6bbb190446bbd95be2be4f5ec, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: quarter
+    clip: {fileID: 8300000, guid: 19459d1ecd26d0447a579bfd62905740, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: half
+    clip: {fileID: 8300000, guid: 582a229f9bd925341a08e70d584b3d69, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: tick
+    clip: {fileID: 8300000, guid: 6f09c9b6477227c4895f786aecc3795b, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: tock
+    clip: {fileID: 8300000, guid: bd1d36742717c15429dc6b847d442fca, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B0
+    clip: {fileID: 8300000, guid: 254daaff9569ff54e8ce148c59ef62c5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B1
+    clip: {fileID: 8300000, guid: 7641dfa4511a20841aeeb0f9d63b2a41, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B5
+    clip: {fileID: 8300000, guid: 1325a66d6a3baa649a1dd7b82d607081, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B6
+    clip: {fileID: 8300000, guid: d40870f14cbbdb84e8f3f5440b4f81ea, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: B7
+    clip: {fileID: 8300000, guid: b0a36eb785814074e8265c130aae251a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C1
+    clip: {fileID: 8300000, guid: 33fcddcb442063847b9b87c9547327f1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C2
+    clip: {fileID: 8300000, guid: 0e221bd53fdb1bb46967b505de30ffb1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C6
+    clip: {fileID: 8300000, guid: b5064b9c01b6f6d429d53a75a280790e, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C7
+    clip: {fileID: 8300000, guid: ca16d4025a7319543bb05e8e7ff2ad1d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C8
+    clip: {fileID: 8300000, guid: e0f873757b2e66649a83078e54a4daec, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D1
+    clip: {fileID: 8300000, guid: d398a4e02c7efec48b38abcb0d075c4f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D2
+    clip: {fileID: 8300000, guid: 3b543b43315e582498caea8f476f102d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D6
+    clip: {fileID: 8300000, guid: 2681d4782c20be34784b70cb725b2d2c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D7
+    clip: {fileID: 8300000, guid: 8685fbcf57f03e04ca2770bbbc0cb833, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: E1
+    clip: {fileID: 8300000, guid: 29137becb76e3574b83fc946c4c2d412, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: E2
+    clip: {fileID: 8300000, guid: b40e480ce9b252c40b2b7d75a7174d24, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: E6
+    clip: {fileID: 8300000, guid: 8fcf71ab388f36645bb4013477de0ccc, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: E7
+    clip: {fileID: 8300000, guid: 1bac0e577ad75b94aa36b2521ee9413a, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F1
+    clip: {fileID: 8300000, guid: 3fcde9894436a7f43ac134c258cbffb0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F2
+    clip: {fileID: 8300000, guid: d93fc37cdbc461e40a8fb8d27fbb377f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F6
+    clip: {fileID: 8300000, guid: ed5d88697ef0a6747a6ed07f51d6820c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F7
+    clip: {fileID: 8300000, guid: f7e699ecb84271540b5cc1d9f839357d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G1
+    clip: {fileID: 8300000, guid: 0bb737892d09780438c0a409f78b1fe8, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G5
+    clip: {fileID: 8300000, guid: 71711560fbcd8ec4786c79db7be60c0f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G6
+    clip: {fileID: 8300000, guid: 1d91537d81c94dc4cb657fdd7c9bc173, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G7
+    clip: {fileID: 8300000, guid: 95bd087ee10a30b4ca08caa72d331d3c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#0
+    clip: {fileID: 8300000, guid: caf5c6b94b527b64b888ece87676afb8, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#1
+    clip: {fileID: 8300000, guid: b029eb2d3647bf4408960a71c4ea8c41, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#2
+    clip: {fileID: 8300000, guid: be3ccf81e2aa3b94eaf951924c316bd6, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#3
+    clip: {fileID: 8300000, guid: 70581ec0681ec0c44a863258ac1cd0a3, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#4
+    clip: {fileID: 8300000, guid: 176bf8c2eae09954089f0b954a8c1458, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#5
+    clip: {fileID: 8300000, guid: ed82d9b76dc591a47946b4473f0352a7, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#6
+    clip: {fileID: 8300000, guid: e2da52da290dd4c4b85a3691f3b0fb7b, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: A#7
+    clip: {fileID: 8300000, guid: 84c7d74c553dc744f87dfa0456904bda, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C#1
+    clip: {fileID: 8300000, guid: be7fb5e8b93fd1742b2cc7d69ac90600, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C#2
+    clip: {fileID: 8300000, guid: 32797670031fa7e4d81144ed2e1497e8, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C#3
+    clip: {fileID: 8300000, guid: 8359aa53ca80cc340ac4a9965ea83b28, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C#4
+    clip: {fileID: 8300000, guid: 09f0b08f9ef521c44b34a94aa1bb4c0f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C#5
+    clip: {fileID: 8300000, guid: 293fe3d0d4da0c54e9daadaff2f214a9, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C#6
+    clip: {fileID: 8300000, guid: 2b5e19f7395d96a4ab3742a26cb35c77, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: C#7
+    clip: {fileID: 8300000, guid: 25ebc12daa1b6284fb34abe1769c11e5, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D#1
+    clip: {fileID: 8300000, guid: 5383523ceef80c54e8f23d2f0ee4fb39, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D#2
+    clip: {fileID: 8300000, guid: fa2b2437d8127ad498e76d85390e84fb, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D#3
+    clip: {fileID: 8300000, guid: e40ec14cb4f302344b5f3687ce1cc8a4, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D#4
+    clip: {fileID: 8300000, guid: 6b0e71a8fd7d3fc4a999df18194076d9, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D#5
+    clip: {fileID: 8300000, guid: 343db0ff9e0819a4d89b9f81061a0107, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D#6
+    clip: {fileID: 8300000, guid: 1aea99f969f9bc24da4afba4f635b5d0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: D#7
+    clip: {fileID: 8300000, guid: 39fee133d65bebd40b2149ee43e49a65, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F#1
+    clip: {fileID: 8300000, guid: 8a4f27c9607610941957d3757b1599f0, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F#2
+    clip: {fileID: 8300000, guid: 0dcf423236eb9f24a8e584942518379c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F#3
+    clip: {fileID: 8300000, guid: 19a0c20173cdf034da3716e41ba18d4f, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F#4
+    clip: {fileID: 8300000, guid: 65384f45bc34fde4386379878b0bf145, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F#5
+    clip: {fileID: 8300000, guid: 0bfbbb6478ef931419c6f2ebbb5c1d8d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F#6
+    clip: {fileID: 8300000, guid: 7bd425a3f8bbc874882884b661878617, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: F#7
+    clip: {fileID: 8300000, guid: 28141957e7976984ebd3caf940d22aec, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G#1
+    clip: {fileID: 8300000, guid: e06afb3f244d8f74b9c5c235094cf373, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G#2
+    clip: {fileID: 8300000, guid: c0bb1a014b84b434492454d47ca7a47d, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G#3
+    clip: {fileID: 8300000, guid: a538be71d565c5e47bf47f05beaa0f47, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G#4
+    clip: {fileID: 8300000, guid: 4c9ff0f69a454454f9d1f3b0da8038dd, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G#5
+    clip: {fileID: 8300000, guid: a177ec07f10464e409c50789c740ad42, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G#6
+    clip: {fileID: 8300000, guid: 12cba85d00c14f94ebf0b1f8ada3ba08, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: G#7
+    clip: {fileID: 8300000, guid: 2ad9013af33dae64a9db3081d72e638c, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    source: {fileID: 0}
