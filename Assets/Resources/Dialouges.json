@@ -1,0 +1,92 @@
+{
+    "Steps": [
+        {
+            "step": 1,
+            "dailouge": "Sonora/Castan thank you for coming so quickly."
+        },
+        {
+            "step": 2,
+            "dailouge": "It is an honor to serve you, Queen Viola. How may I be of assistance?"
+        },
+        {
+            "step": 3,
+            "dailouge": "Something is happening in Harmony. There are vague reports of trouble from every kingdom."
+        },
+        {
+            "step": 4,
+            "dailouge": "I’ve reached out to the rulers of each kingdom but have received no response."
+        },
+        {
+            "step": 5,
+            "dailouge": "It may be that Composia is next. However, a tip from an interesting source said you might be able to help. "
+        },
+        {
+            "step": 6,
+            "dailouge": "If the information I received is true, you are Harmony’s only hope. For now I am sending you to Accordia."
+        },
+        {
+            "step": 7,
+            "dailouge": "I want you to see what you can learn. From there you will continue on to Santur and then to Song."
+        },
+        {
+            "step": 8,
+            "dailouge": "Me?! I’ve only been a squire for a few months!"
+        },
+        {
+            "step": 9,
+            "dailouge": "This mission doesn’t require you to be a squire per se. Only that you be yourself."
+        },
+        {
+            "step": 10,
+            "dailouge": "I know you are fairly new. However…you do have all the skills required to complete this quest."
+        },
+        {
+            "step": 11,
+            "dailouge": "You will need this."
+        },
+        {
+            "step": 12,
+            "dailouge": "This book has been guarded by Composian royals for centuries."
+        },
+        {
+            "step": 13,
+            "dailouge": "It will aid you by recording important knowledge you encounter on the way."
+        },
+        {
+            "step": 14,
+            "dailouge": "Thank you, your highness. I don’t know what else to say."
+        },
+        {
+            "step": 15,
+            "dailouge": "I know it’s not much but that’s all the information I can give you."
+        },
+        {
+            "step": 16,
+            "dailouge": "Now, (pauses) deep within the dungeons, there is a prisoner who may be able to offer you vital information."
+        },
+        {
+            "step": 17,
+            "dailouge": "He was caught attempting to steal from the royal treasury."
+        },
+        {
+            "step": 18,
+            "dailouge": "He was caught attempting to steal from the royal treasury."
+        },
+        {
+            "step": 19,
+            "dailouge": "He is a cunning and dreaded thief known across all of Harmony"
+        },
+        {
+            "step": 20,
+            "dailouge": "Deliver a meal to his cell, question him  then make haste to Accordia."
+        },
+        {
+            "step": 21,
+            "dailouge": "Yes, your highness. "
+        },
+        {
+            "step": 22,
+            "dailouge": "Should you succeed in your quest, all of Harmony will know your name. Good luck young squire."
+        }
+    ]
+}
