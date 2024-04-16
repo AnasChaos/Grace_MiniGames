@@ -131,6 +131,163 @@
             "isQueen": true,
             "isTask": false,
             "dailouge": "Should you succeed in your quest, all of Harmony will know your name. Good luck young squire."
+        },
+        {
+            "step": 22,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 23,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 24,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 25,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 26,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 27,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 28,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 29,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 30,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 31,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 32,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 33,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 34,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 35,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 36,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 37,
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
+        },
+        {
+            "step": 38,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "Ahhh, clever one of mind so sound sent to me by the royal crown'd."
+        },
+        {
+            "step": 39,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": " Your meal was delicious to eat, my erstwhile temper is now sweet. "
+        },
+        {
+            "step": 40,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "You have come for my gems of wisdom and will save the forgotten kingdom."
+        },
+        {
+            "step": 41,
+            "isQueen": false,
+            "isTask": false,
+            "dailouge": "I don't have time to play your games or talk in rhyme."
+        },
+        {
+            "step": 42,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "Not so quickly, young squire. Your eagerness I admire."
+        },
+        {
+            "step": 43,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "However, you must be the one that I require; otherwise our plight is even more dire."
+        },
+        {
+            "step": 44,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "Answers I will give you, without guilt, shame or game. "
+        },
+        {
+            "step": 45,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "But earn them you must, for Rumplestiltskin is my name."
+        },
+        {
+            "step": 46,
+            "isQueen": false,
+            "isTask": false,
+            "dailouge": "Earn them?"
+        },
+        {
+            "step": 47,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "Fill in the letters, notes on the grand staff. Unveil a message, find the correct path."
         }
+
     ]
 }

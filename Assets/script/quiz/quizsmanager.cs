@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class quizsmanager : MonoBehaviour
 {
@@ -47,7 +48,15 @@ public class quizsmanager : MonoBehaviour
         {
             // Handle the case when there are no more questions.
             Debug.Log("No more questions.");
-            Result();
+            if (SceneManager.GetActiveScene().name.Equals("Tower")) 
+            {
+                SceneManager.LoadScene("Scene2");            
+            }
+            else 
+            {
+                SceneManager.LoadScene("Scene3");
+            }
+            //Result();
             return;
         }
 

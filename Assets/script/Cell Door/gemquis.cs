@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class gemquis : MonoBehaviour
@@ -35,7 +36,7 @@ public class gemquis : MonoBehaviour
     public int maxrounds;
     public float totalcurrent = 0;
     private float current = 0;
-    int rounds;
+    [SerializeField]int rounds;
     bool win;
     public GameObject roundpannel;
     [SerializeField] private TMP_Text roundtext;
@@ -152,7 +153,8 @@ public class gemquis : MonoBehaviour
             if (rounds>= maxrounds)
             {
                 win = true;
-                Result();
+                SceneManager.LoadScene("Scene4");
+                //Result();
                 return;
             }
             if (!win)

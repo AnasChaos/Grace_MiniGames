@@ -197,7 +197,6 @@ public class Scene3Handler : MonoBehaviour
         });
 
     }
-
     private void Step37() 
     {
         SceneManager.LoadScene("Cell Door");

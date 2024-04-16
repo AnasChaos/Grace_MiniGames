@@ -100,22 +100,22 @@ public class Scene2Handler : MonoBehaviour
             animatorPapers.enabled = true;
         });
         yield return new WaitUntil(() => animatorPapers.GetCurrentAnimatorStateInfo(0).normalizedTime > 1);
-        LeanTween.moveY(inventory.gameObject, 50, 2f).setOnComplete(() =>
+        LeanTween.moveY(inventory.gameObject, 10, 2f).setOnComplete(() =>
         {   
             openBook.SetActive(true);
             LeanTween.scale(openBook, Vector3.one, 2f).setOnComplete(() =>
             {
-                LeanTween.moveY(inventory.gameObject, -1000, 2f).setOnComplete(() =>
+                LeanTween.moveY(inventory.gameObject, -50, 2f).setOnComplete(() =>
                 {
                     LeanTween.alpha(key2.rectTransform, 1f, 2f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
                     {
                         LeanTween.scale(animatorPapers.gameObject, Vector3.zero, 2f).setOnComplete(() =>
                         {
-                            LeanTween.moveY(inventory.gameObject, 50, 2f).setOnComplete(() =>
+                            LeanTween.moveY(inventory.gameObject, 10, 2f).setOnComplete(() =>
                             {
                                 LeanTween.scale(openBook.gameObject, Vector3.zero, 2f).setOnComplete(() =>
                                 {
-                                    LeanTween.moveY(inventory.gameObject, -1000, 2f).setOnComplete(() =>
+                                    LeanTween.moveY(inventory.gameObject, -50, 2f).setOnComplete(() =>
                                     {
                                         NextStep();
                                     });

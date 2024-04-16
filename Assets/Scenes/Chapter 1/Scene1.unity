@@ -2088,7 +2088,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   steps:
     steps: []
-  nextStepCounter: 13
+  nextStepCounter: 0
   nextStepOverlay: {fileID: 954490589}
   animator: {fileID: 951737388}
   inventory: {fileID: 980837096}

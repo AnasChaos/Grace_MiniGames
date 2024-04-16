@@ -15,8 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1/Scene1.unity
     guid: 072c7c335611df8449100941df0b6605
   - enabled: 1
-    path: Assets/Scenes/Chapter 1/tower.unity
+    path: Assets/Scenes/Chapter 1/Tower.unity
     guid: bfe3f83c241a4f94dae79a18e7bbba8c
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Scene2.unity
+    guid: e8802301ac540e24e87ef22bf90d63a6
   - enabled: 1
     path: Assets/Scenes/Notes Speller.unity
     guid: 204349742c0653849a8ab8dc516209ee
@@ -24,11 +27,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1/Cell Door.unity
     guid: 5df97e3de1ffd464c839614092d65cb9
   - enabled: 1
+    path: Assets/Scenes/Chapter 1/Scene3.unity
+    guid: 3ac8ac618bc98b0438c7fde13d646332
+  - enabled: 1
     path: Assets/Scenes/scale_game.unity
     guid: e944388b1c9cbdd4591e00b4e10d97f8
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Cellar Game.unity
     guid: 246da774795074f44a0a35b33840a372
+  - enabled: 1
+    path: Assets/Scenes/Chapter 1/Scene4.unity
+    guid: be14cc9dd07da6145801c8d7db13adca
   - enabled: 1
     path: Assets/Scenes/chestgame.unity
     guid: 1c47bda2225c2ca41899519c0ecfea36
