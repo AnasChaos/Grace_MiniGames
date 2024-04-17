@@ -40,6 +40,8 @@ public class Scene2Handler : MonoBehaviour
         openBook.transform.localScale = Vector3.zero;
         animatorPapers.transform.localScale = Vector3.zero;
         ImageAlpha(effectHover, 0);
+        effectHover.gameObject.SetActive(false);
+        effectHover2.gameObject.SetActive(false);
         ImageAlpha(effectHover2, 0);
         ImageAlpha(daimonds, 0);
         animatorChest.transform.localScale = Vector3.zero;
@@ -47,6 +49,7 @@ public class Scene2Handler : MonoBehaviour
 
     private void StepCounter(int stepCounter)
     {
+        Debug.Log($"Step counter: {stepCounter}");
         nextStepCounter++;
         switch (stepCounter)
         {
@@ -72,14 +75,16 @@ public class Scene2Handler : MonoBehaviour
     }
 
     private void Step26()
-    {
+    {   
+        effectHover.gameObject.SetActive(true);
         LeanTween.alpha(effectHover.rectTransform, 0, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
         {
-            LeanTween.alpha(effectHover.rectTransform, 0.5f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
+            LeanTween.alpha(effectHover.rectTransform, 1f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
             {
-                if (this.nextStepCounter == 28)
+                if (this.nextStepCounter >= 28)
                 {
                     effectHover.gameObject.SetActive(false);
+                    return;
                 }
                 else
                 {
@@ -131,13 +136,15 @@ public class Scene2Handler : MonoBehaviour
 
     private void Step28()
     {
+        effectHover2.gameObject.SetActive(true);  
         LeanTween.alpha(effectHover2.rectTransform, 0, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
         {
-            LeanTween.alpha(effectHover2.rectTransform, 0.5f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
+            LeanTween.alpha(effectHover2.rectTransform, 1f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
             {
-                if (this.nextStepCounter == 30)
+                if (this.nextStepCounter >= 30)
                 {
                     effectHover2.gameObject.SetActive(false);
+                    return;
                 }
                 else
                 {
@@ -156,10 +163,9 @@ public class Scene2Handler : MonoBehaviour
             animatorChest.enabled = true;
         });
         yield return new WaitUntil(() => animatorChest.GetCurrentAnimatorStateInfo(0).normalizedTime > 1);
-        LeanTween.alpha(daimonds.rectTransform, 1f, 1f).setEase(LeanTweenType.easeInQuad).setDelay(2f).setOnComplete(() =>
-        {               
-            NextStep();
-        });
+        LeanTween.alpha(daimonds.rectTransform, 1f, 1f);
+        yield return new WaitForSeconds(2.5f);
+        NextStep();
     }
 
     private void Step30() 
@@ -180,10 +186,13 @@ public class Scene2Handler : MonoBehaviour
                 effectHover.gameObject.SetActive(true);
             });
     }
-
-    public void NextStep() 
+    public void NextStep(Button btn = null)
     {
         StepCounter(nextStepCounter);
+        if (btn != null)
+        {
+            btn.interactable = false;
+        }
     }
 
     private void ImageAlpha(Image img,float value) 

@@ -43,6 +43,7 @@ public class Scene4Handler : MonoBehaviour
 
     private void StepCounter(int stepCounter)
     {
+        Debug.Log($"Step counter: {stepCounter}");
         nextStepCounter++;
         switch (stepCounter)
         {
@@ -174,9 +175,13 @@ public class Scene4Handler : MonoBehaviour
         return false;
     }
 
-    public void NextStep()
+    public void NextStep(Button btn = null)
     {
         StepCounter(nextStepCounter);
+        if (btn != null)
+        {
+            btn.interactable = false;
+        }
     }
 
     private void NextStepOverlay()

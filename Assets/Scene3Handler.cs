@@ -40,10 +40,12 @@ public class Scene3Handler : MonoBehaviour
         CameraPosAndSize(80);
         StepCounter(31);
         ImageAlpha(effectHover, 0);
+        effectHover.gameObject.SetActive(false);
         emptyJar.transform.localScale = Vector3.zero;
         ImageAlpha(filledJar, 0);
         ImageAlpha(filledInventoryJar, 0);
         ImageAlpha(effectHover2,0);
+        effectHover2.gameObject.SetActive(false);
         knifeInventory.gameObject.SetActive(false);
         food.transform.localScale = Vector3.zero;
         knife.transform.localScale = Vector3.zero;
@@ -53,6 +55,7 @@ public class Scene3Handler : MonoBehaviour
 
     private void StepCounter(int stepCounter)
     {
+        Debug.Log($"Step counter: {stepCounter}");
         nextStepCounter++;
         switch (stepCounter)
         {
@@ -84,14 +87,16 @@ public class Scene3Handler : MonoBehaviour
     }
 
     private void Step31()
-    {
+    {   
+        effectHover.gameObject.SetActive(true);
         LeanTween.alpha(effectHover.rectTransform, 0, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
         {
-            LeanTween.alpha(effectHover.rectTransform, 0.5f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
+            LeanTween.alpha(effectHover.rectTransform, 1f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
             {
-                if (this.nextStepCounter == 33)
+                if (this.nextStepCounter >= 33)
                 {
                     effectHover.gameObject.SetActive(false);
+                    return;
                 }
                 else
                 {
@@ -141,13 +146,15 @@ public class Scene3Handler : MonoBehaviour
 
     private void Step34()
     {
+        effectHover2.gameObject.SetActive(true);
         LeanTween.alpha(effectHover2.rectTransform, 0, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
         {
-            LeanTween.alpha(effectHover2.rectTransform, 0.5f, 1.5f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
+            LeanTween.alpha(effectHover2.rectTransform, 1f, 1.5f).setEase(LeanTweenType.easeOutQuad).setOnComplete(() =>
             {
-                if (this.nextStepCounter == 36)
+                if (this.nextStepCounter >= 36)
                 {
                     effectHover2.gameObject.SetActive(false);
+                    return;
                 }
                 else
                 {
@@ -201,9 +208,13 @@ public class Scene3Handler : MonoBehaviour
     {
         SceneManager.LoadScene("Cell Door");
     }
-    public void NextStep()
+    public void NextStep(Button btn = null)
     {
         StepCounter(nextStepCounter);
+        if (btn != null)
+        {
+            btn.interactable = false;
+        }
     }
 
 
@@ -211,12 +222,12 @@ public class Scene3Handler : MonoBehaviour
     {   //915 //55
         if (isPosChange) 
         {
-            LeanTween.move(cameraPos.gameObject, new Vector2(valueX, valueY), 1).setDelay(1).setOnComplete(() => 
+            LeanTween.move(cameraPos.gameObject, new Vector2(valueX, valueY), 1).setDelay(1).setOnComplete(() =>
             {
                 NextStep();
-            });           
+            });
         }
-       
+
         LeanTween.value(cameraPos.orthographicSize, cameraSizeVal, 2f)
         .setOnUpdate((float value) =>
         {

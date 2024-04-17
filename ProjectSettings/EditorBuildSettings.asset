@@ -21,105 +21,105 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1/Scene2.unity
     guid: e8802301ac540e24e87ef22bf90d63a6
   - enabled: 1
-    path: Assets/Scenes/Notes Speller.unity
-    guid: 204349742c0653849a8ab8dc516209ee
-  - enabled: 1
-    path: Assets/Scenes/Chapter 1/Cell Door.unity
-    guid: 5df97e3de1ffd464c839614092d65cb9
+    path: Assets/Scenes/Chapter 1/Cellar Game.unity
+    guid: 246da774795074f44a0a35b33840a372
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Scene3.unity
     guid: 3ac8ac618bc98b0438c7fde13d646332
   - enabled: 1
-    path: Assets/Scenes/scale_game.unity
-    guid: e944388b1c9cbdd4591e00b4e10d97f8
-  - enabled: 1
-    path: Assets/Scenes/Chapter 1/Cellar Game.unity
-    guid: 246da774795074f44a0a35b33840a372
+    path: Assets/Scenes/Chapter 1/Cell Door.unity
+    guid: 5df97e3de1ffd464c839614092d65cb9
   - enabled: 1
     path: Assets/Scenes/Chapter 1/Scene4.unity
     guid: be14cc9dd07da6145801c8d7db13adca
   - enabled: 1
+    path: Assets/Scenes/Notes Speller.unity
+    guid: 204349742c0653849a8ab8dc516209ee
+  - enabled: 0
+    path: Assets/Scenes/scale_game.unity
+    guid: e944388b1c9cbdd4591e00b4e10d97f8
+  - enabled: 0
     path: Assets/Scenes/chestgame.unity
     guid: 1c47bda2225c2ca41899519c0ecfea36
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/matchgame.unity
     guid: 552b19532f42ef249b4cd35505e997ea
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/takigame.unity
     guid: e8e6a668d83392a4484092491abbc109
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/tunnelgame.unity
     guid: 146bb729a5fc48b4dbf1eb719a60a89d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/tunnelgame2.unity
     guid: b6b50539dab8d8842b96f0fe04053954
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Chapter 1/Bridge.unity
     guid: 11413665e02c715459d45e6bccf9e28e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bridge3.unity
     guid: 258b6d5354188aa4b8ede68132406d85
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bridge2.unity
     guid: 96afed15cb09ea44b89377cc5c6f806e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/lockpicking.unity
     guid: faafe6f045d4c5a4299b05854b1fdd7c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/mastermind.unity
     guid: 80628c453cdbd774eb7d5d87d474c46b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/radiogame.unity
     guid: 924e59da48afd61469ae63e751719a08
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scrolling Door.unity
     guid: 2f9e8ad9042c3764f87afcdda189978a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MusicalSimon.unity
     guid: 8fa970615c9379340806a98db5526fb7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/box.unity
     guid: 5722a2123b4860d4d98f0f122ad84f2c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/mapgame.unity
     guid: 742f42e80d2c9c046b3c3d3192c29fb3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/puzzelgame.unity
     guid: 970762083e3914f4b9d373fa420beef4
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/spicegame.unity
     guid: 8becd84693b43024db4acfd7558ed927
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jewellery.unity
     guid: 03cd237b3d8f99f4fb3455e62d20f946
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Peddlers Game.unity
     guid: 918ee72f5b6596243a8d85e4ddf6f694
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Jigsaw Mirror.unity
     guid: 3b533305d6d7ec44eafaf2e515738b12
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Freeing Sultan.unity
     guid: 0a010d60033ffc148afec89535f37822
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SharpsFlat Keyboard.unity
     guid: 5eb1bc822067b51428b49925cd46d312
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Alchemy.unity
     guid: aabab6e9f510013449b5fe05eb000d26
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/arrows.unity
     guid: 25f0d05c4d1a28a4d94a4c496460ae25
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scrolllock.unity
     guid: 332136092e3a1ad41ba09eda2204abb8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Bridge4.unity
     guid: 824c49a8f92f6c340b21053fdb7cfa94
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/maze.unity
     guid: 89b534619161287438fb3c617c6ad8a7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tilesgame.unity
     guid: d6740c2e253a0af4da31995ddfc6205b
   m_configObjects: {}

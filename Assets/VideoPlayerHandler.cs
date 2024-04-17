@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 
 public class VideoPlayerHandler : MonoBehaviour
@@ -15,5 +16,6 @@ public class VideoPlayerHandler : MonoBehaviour
     private void VideoEnd() 
     {
         Debug.Log("Video End");
+        SceneManager.LoadScene("Scene1");
     }
 }

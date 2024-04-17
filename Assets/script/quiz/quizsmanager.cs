@@ -42,6 +42,12 @@ public class quizsmanager : MonoBehaviour
       Sou = Soundmanager.instance;            
     }
 
+    public void ByPassMission() 
+    {
+        correct = 22;
+        getraindomquestion();
+    }
+
     void getraindomquestion()
     {
         if (correct== totalquestions)

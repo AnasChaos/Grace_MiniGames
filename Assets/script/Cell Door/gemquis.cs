@@ -52,9 +52,6 @@ public class gemquis : MonoBehaviour
     //create random questions
     void generateque()
     {
-
-
-
         gemtype TY;
         gemtype[] values = (gemtype[])System.Enum.GetValues(typeof(gemtype));
         gemscripts creator = new gemscripts();
@@ -135,6 +132,12 @@ public class gemquis : MonoBehaviour
         }
 
 
+    }
+    public void ByPassMission() 
+    {
+        rounds = 5;
+        current = 5;
+        checkround();
     }
     // check if round is clered
     void checkround()

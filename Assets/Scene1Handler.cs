@@ -74,7 +74,8 @@ public class Scene1Handler : MonoBehaviour
         StepCounter(0);
     }
     private void StepCounter(int stepCounter)
-    {   
+    {    
+        Debug.Log($"Step counter: {stepCounter}");
         this.nextStepCounter++;
         switch (stepCounter)
         {
@@ -163,6 +164,7 @@ public class Scene1Handler : MonoBehaviour
     }
     private void Step11()
     {
+        nextStepOverlay.interactable = false;
         LeanTween.moveLocalY(book.gameObject, -250, 1.5f).setOnComplete(() =>
         {
             LeanTween.moveY(inventory.gameObject, 0, 2f).setOnComplete(() =>
@@ -171,7 +173,7 @@ public class Scene1Handler : MonoBehaviour
                 {
                     LeanTween.alpha(inventoryBook.rectTransform, 1, 2f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
                     {
-                        LeanTween.moveY(inventory.gameObject, -1000, 3f).setOnComplete(() =>
+                        LeanTween.moveY(inventory.gameObject, -100, 3f).setOnComplete(() =>
                         {
                             NextStep();
                         });
@@ -182,15 +184,16 @@ public class Scene1Handler : MonoBehaviour
     }
     private void Step22()
     {       
-        LeanTween.moveY(dailougeHolder.gameObject, -1000, 1f).setOnComplete(() =>
+        LeanTween.moveY(dailougeHolder.gameObject, -100, 1f).setOnComplete(() =>
         {
             LeanTween.alpha(imageHover.rectTransform, 0, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
             {
                 LeanTween.alpha(imageHover.rectTransform, 0.5f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
                 {
-                    if (this.nextStepCounter == 24) 
+                    if (this.nextStepCounter >= 24) 
                     {
-                        Invoke("NextStepOverlay", 1f);
+                        //Invoke("NextStepOverlay", 1f);
+                        return;
                     }
                     else
                     {
@@ -204,11 +207,13 @@ public class Scene1Handler : MonoBehaviour
         });
     }
     private void Step23()
-    {
+    {  
+        nextStepOverlay.interactable = false;
         CameraPosAndSize(40);
     }
     private void Step24() 
     {
+        nextStepOverlay.interactable = false;
         LeanTween.alpha(step24Key.rectTransform, 1f, 2f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
         {
             LeanTween.alpha(step24Key.rectTransform, 0f, 2f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
@@ -223,7 +228,7 @@ public class Scene1Handler : MonoBehaviour
                         {
                             LeanTween.scale(openBook, Vector2.zero, 2f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
                             {
-                                LeanTween.moveY(inventory.gameObject, -1000, 2f).setOnComplete(() =>
+                                LeanTween.moveY(inventory.gameObject, -100, 2f).setOnComplete(() =>
                                 {
                                     CameraPosAndSize(80);
                                 });
@@ -243,9 +248,13 @@ public class Scene1Handler : MonoBehaviour
         SceneManager.LoadScene("Tower");
     }
 
-    public void NextStep()
+    public void NextStep(Button btn = null)
     {
         StepCounter(nextStepCounter);
+        if(btn != null) 
+        {
+            btn.interactable = false;
+        }
     }
     private void ShowDialogue(int stepCounter)
     {
