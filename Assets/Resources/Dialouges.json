@@ -230,60 +230,66 @@
         },
         {
             "step": 38,
-            "isQueen": true,
-            "isTask": false,
-            "dailouge": "Ahhh, clever one of mind so sound sent to me by the royal crown'd."
+            "isQueen": false,
+            "isTask": true,
+            "dailouge": ""
         },
         {
             "step": 39,
             "isQueen": true,
             "isTask": false,
-            "dailouge": " Your meal was delicious to eat, my erstwhile temper is now sweet. "
+            "dailouge": "Ahhh, clever one of mind so sound sent to me by the royal crown'd."
         },
         {
             "step": 40,
             "isQueen": true,
             "isTask": false,
-            "dailouge": "You have come for my gems of wisdom and will save the forgotten kingdom."
+            "dailouge": " Your meal was delicious to eat, my erstwhile temper is now sweet. "
         },
         {
             "step": 41,
+            "isQueen": true,
+            "isTask": false,
+            "dailouge": "You have come for my gems of wisdom and will save the forgotten kingdom."
+        },
+        {
+            "step": 42,
             "isQueen": false,
             "isTask": false,
             "dailouge": "I don't have time to play your games or talk in rhyme."
         },
         {
-            "step": 42,
+            "step": 43,
             "isQueen": true,
             "isTask": false,
             "dailouge": "Not so quickly, young squire. Your eagerness I admire."
         },
         {
-            "step": 43,
+            "step": 44,
             "isQueen": true,
             "isTask": false,
             "dailouge": "However, you must be the one that I require; otherwise our plight is even more dire."
         },
         {
-            "step": 44,
+            "step": 45,
             "isQueen": true,
             "isTask": false,
             "dailouge": "Answers I will give you, without guilt, shame or game. "
         },
         {
-            "step": 45,
+            "step": 46,
             "isQueen": true,
             "isTask": false,
             "dailouge": "But earn them you must, for Rumplestiltskin is my name."
         },
         {
-            "step": 46,
+            "step": 47,
             "isQueen": false,
             "isTask": false,
             "dailouge": "Earn them?"
         },
         {
-            "step": 47,
+            "step": 48,
             "isQueen": true,
             "isTask": false,
             "dailouge": "Fill in the letters, notes on the grand staff. Unveil a message, find the correct path."

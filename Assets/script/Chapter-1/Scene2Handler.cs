@@ -108,6 +108,7 @@ public class Scene2Handler : MonoBehaviour
         LeanTween.moveY(inventory.gameObject, 10, 2f).setOnComplete(() =>
         {   
             openBook.SetActive(true);
+            LeanTween.moveLocalY(openBook, 20, 2f);
             LeanTween.scale(openBook, Vector3.one, 2f).setOnComplete(() =>
             {
                 LeanTween.moveY(inventory.gameObject, -50, 2f).setOnComplete(() =>
@@ -115,9 +116,10 @@ public class Scene2Handler : MonoBehaviour
                     LeanTween.alpha(key2.rectTransform, 1f, 2f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
                     {
                         LeanTween.scale(animatorPapers.gameObject, Vector3.zero, 2f).setOnComplete(() =>
-                        {
+                        {   
                             LeanTween.moveY(inventory.gameObject, 10, 2f).setOnComplete(() =>
                             {
+                                LeanTween.moveLocalY(openBook, -300, 2f);
                                 LeanTween.scale(openBook.gameObject, Vector3.zero, 2f).setOnComplete(() =>
                                 {
                                     LeanTween.moveY(inventory.gameObject, -50, 2f).setOnComplete(() =>

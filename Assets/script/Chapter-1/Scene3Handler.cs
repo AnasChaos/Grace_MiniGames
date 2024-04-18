@@ -28,7 +28,9 @@ public class Scene3Handler : MonoBehaviour
     [SerializeField] Image knife;
     [SerializeField] Image food;
     [SerializeField] Image foodInventory;
-
+    
+    [Header("Step 37")]
+    [SerializeField] Image effectHover3;
 
 
     private void Start()
@@ -49,7 +51,9 @@ public class Scene3Handler : MonoBehaviour
         knifeInventory.gameObject.SetActive(false);
         food.transform.localScale = Vector3.zero;
         knife.transform.localScale = Vector3.zero;
-        ImageAlpha(foodInventory, 0); 
+        ImageAlpha(foodInventory, 0);
+        ImageAlpha(effectHover3, 0);
+        effectHover3.gameObject.SetActive(false);
 
     }
 
@@ -79,6 +83,9 @@ public class Scene3Handler : MonoBehaviour
                 break;
             case 37:
                 Step37();
+                break;
+            case 38:
+                Step38();
                 break;
             default:
                 break;
@@ -117,12 +124,14 @@ public class Scene3Handler : MonoBehaviour
     {
         LeanTween.moveY(inventory.gameObject, 10, 2f).setDelay(1).setOnComplete(() =>
         {
-            LeanTween.scale(emptyJar.gameObject, new Vector3(2,2,2), 1.5f).setDelay(2).setOnComplete(() =>
+            LeanTween.moveLocalY(emptyJar.gameObject, 0, 1f);
+            LeanTween.scale(emptyJar.gameObject, new Vector3(2,2,2), 1f).setOnComplete(() =>
             {
                 LeanTween.alpha(filledJar.rectTransform, 1f, 2f).setDelay(1).setOnComplete(() =>
                 {
                     emptyJar.gameObject.SetActive(false);
-                    LeanTween.scale(filledJar.gameObject, Vector2.zero, 2f).setDelay(1).setOnComplete(() =>
+                    LeanTween.moveLocalY(filledJar.gameObject, -300, 1f);
+                    LeanTween.scale(filledJar.gameObject, Vector2.zero, 1f).setOnComplete(() =>
                     {
                         LeanTween.alpha(filledInventoryJar.rectTransform, 1f, 2f).setDelay(1).setOnComplete(() =>
                         {
@@ -176,16 +185,20 @@ public class Scene3Handler : MonoBehaviour
         knifeInventory.gameObject.SetActive(true);
         LeanTween.moveY(inventory.gameObject, 20, 1.5f).setDelay(1).setOnComplete(() =>
         {
-            LeanTween.scale(knife.gameObject, new Vector2(2, 2), 1.5f).setDelay(1).setOnComplete(() =>
+            LeanTween.moveLocalY(knife.gameObject, 20, 1f).setDelay(1f);
+            LeanTween.scale(knife.gameObject, new Vector2(2, 2), 1f).setDelay(1f).setOnComplete(() =>
             {
-                LeanTween.rotateZ(knife.gameObject, 40, 1.5f).setDelay(1).setOnComplete(() =>
+                LeanTween.rotateZ(knife.gameObject, 40, 1f).setDelay(1f).setOnComplete(() =>
                 {
-                    LeanTween.scale(knife.gameObject, Vector2.zero, 1.5f).setDelay(1).setOnComplete(() =>
+                    LeanTween.moveLocalY(knife.gameObject, -300, 1f).setDelay(1f);
+                    LeanTween.scale(knife.gameObject, Vector2.zero, 1.5f).setDelay(1f).setOnComplete(() =>
                     {
                         LeanTween.scale(food.gameObject, new Vector2(2, 2), 1.5f).setDelay(1).setOnComplete(() =>
                         {
-                            LeanTween.scale(food.gameObject, Vector2.zero, 1.5f).setDelay(1).setOnComplete(() =>
-                            {
+                            LeanTween.moveLocalY(knife.gameObject, -300, 1f).setDelay(1);
+                            LeanTween.moveLocalY(food.gameObject, -300, 1f).setDelay(1);
+                            LeanTween.scale(food.gameObject, Vector2.zero, 1f).setDelay(1).setOnComplete(() =>
+                            {                                
                                 LeanTween.alpha(foodInventory.rectTransform, 1, 1.5f).setDelay(1).setOnComplete(() =>
                                 {
                                     LeanTween.moveY(inventory.gameObject, -50, 1.5f).setDelay(1).setOnComplete(() =>
@@ -205,6 +218,26 @@ public class Scene3Handler : MonoBehaviour
 
     }
     private void Step37() 
+    {
+        effectHover3.gameObject.SetActive(true);
+        LeanTween.alpha(effectHover3.rectTransform, 0, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
+        {
+            LeanTween.alpha(effectHover3.rectTransform, 1f, 1.5f).setEase(LeanTweenType.easeInQuad).setOnComplete(() =>
+            {
+                if (this.nextStepCounter >= 39)
+                {
+                    effectHover3.gameObject.SetActive(false);
+                    return;
+                }
+                else
+                {
+                    Step37();
+                }
+                Debug.Log("Debug");
+            });
+        });
+    }
+    private void Step38()
     {
         SceneManager.LoadScene("Cell Door");
     }

@@ -98,8 +98,10 @@ public class Scene4Handler : MonoBehaviour
                 LeanTween.alpha(inventoryFood.rectTransform, 0, 1f);
                 LeanTween.alpha(inventoryBeer.rectTransform, 0, 1f).setOnComplete(() =>
                 {
-                    LeanTween.scale(food.gameObject, Vector2.one, 1f).setDelay(1).setOnComplete(() =>
+                    LeanTween.moveLocalY(food, 0, 1f);
+                    LeanTween.scale(food.gameObject, Vector2.one, 1f).setOnComplete(() =>
                     {
+                        LeanTween.moveLocalY(food, 20, 1f);
                         LeanTween.moveY(inventory.gameObject, -100, 1f).setDelay(1).setOnComplete(() => 
                         {
                             LeanTween.scale(food.gameObject, Vector2.zero, 1f).setDelay(1).setOnComplete(() =>
@@ -110,7 +112,7 @@ public class Scene4Handler : MonoBehaviour
                         });
 
                     });
-
+                    
                 });
 
             });
