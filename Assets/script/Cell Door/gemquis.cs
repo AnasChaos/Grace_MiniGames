@@ -157,6 +157,7 @@ public class gemquis : MonoBehaviour
             {
                 win = true;
                 SceneManager.LoadScene("Scene4");
+                PlayerPrefs.SetString(Global.saveState, "Scene4");
                 //Result();
                 return;
             }

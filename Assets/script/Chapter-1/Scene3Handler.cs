@@ -1,5 +1,6 @@
 using Newtonsoft.Json;
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -85,7 +86,7 @@ public class Scene3Handler : MonoBehaviour
                 Step37();
                 break;
             case 38:
-                Step38();
+                StartCoroutine(Step38());
                 break;
             default:
                 break;
@@ -237,8 +238,10 @@ public class Scene3Handler : MonoBehaviour
             });
         });
     }
-    private void Step38()
+    private IEnumerator Step38()
     {
+        CameraPosAndSize(40);
+        yield return new WaitUntil(() => cameraPos.orthographicSize <= 40);
         SceneManager.LoadScene("Cell Door");
     }
     public void NextStep(Button btn = null)
@@ -254,11 +257,22 @@ public class Scene3Handler : MonoBehaviour
     private void CameraPosAndSize(int cameraSizeVal,bool isPosChange = false,float valueX = 0, float valueY = 0)
     {   //915 //55
         if (isPosChange) 
-        {
-            LeanTween.move(cameraPos.gameObject, new Vector2(valueX, valueY), 1).setDelay(1).setOnComplete(() =>
+        {   
+            if(cameraSizeVal == 40) 
             {
-                NextStep();
-            });
+                LeanTween.move(cameraPos.gameObject, new Vector2(valueX, valueY), 1.5f).setDelay(0.5f).setOnComplete(() =>
+                {
+                    NextStep();
+                });
+            }
+            else 
+            {
+                LeanTween.moveX(cameraPos.gameObject, valueX, 1.5f);
+                LeanTween.moveY(cameraPos.gameObject, valueY, 1.5f).setOnComplete(() =>
+                {
+                    NextStep();
+                });
+            }
         }
 
         LeanTween.value(cameraPos.orthographicSize, cameraSizeVal, 2f)
@@ -269,9 +283,7 @@ public class Scene3Handler : MonoBehaviour
         }).setOnComplete(() =>
         {            
             effectHover.gameObject.SetActive(!isPosChange);
-        });
-        
-        
+        });               
     }
 
     private void ImageAlpha(Image img, float value)

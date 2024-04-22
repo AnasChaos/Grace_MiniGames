@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Chapter 1/Scene4.unity
     guid: be14cc9dd07da6145801c8d7db13adca
   - enabled: 1
-    path: Assets/Scenes/Notes Speller.unity
+    path: Assets/Scenes/Chapter 1/Notes Speller.unity
     guid: 204349742c0653849a8ab8dc516209ee
   - enabled: 0
     path: Assets/Scenes/scale_game.unity

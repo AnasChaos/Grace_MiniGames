@@ -5,6 +5,7 @@ using System.Linq;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEditor.SearchService;
 
 public class quizsmanager : MonoBehaviour
 {
@@ -56,11 +57,13 @@ public class quizsmanager : MonoBehaviour
             Debug.Log("No more questions.");
             if (SceneManager.GetActiveScene().name.Equals("Tower")) 
             {
-                SceneManager.LoadScene("Scene2");            
+                SceneManager.LoadScene("Scene2");
+                PlayerPrefs.SetString(Global.saveState, "Scene2");
             }
             else 
             {
                 SceneManager.LoadScene("Scene3");
+                PlayerPrefs.SetString(Global.saveState, "Scene3");
             }
             //Result();
             return;

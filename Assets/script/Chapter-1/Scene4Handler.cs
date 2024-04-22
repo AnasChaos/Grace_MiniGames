@@ -1,8 +1,5 @@
 using Newtonsoft.Json;
-using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,7 +7,7 @@ using UnityEngine.UI;
 public class Scene4Handler : MonoBehaviour
 {
     [SerializeField] Steps steps;
-    [SerializeField] int nextStepCounter = 38;
+    [SerializeField] int nextStepCounter = 39;
     [SerializeField] Button nextStepOverlay;
     [SerializeField] Animator animator;
     [SerializeField] GameObject inventory;
@@ -37,7 +34,7 @@ public class Scene4Handler : MonoBehaviour
         Debug.Log(steps);
         this.steps = JsonConvert.DeserializeObject<Steps>(steps);
         yield return new WaitUntil(() => animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1);
-        StepCounter(38);
+        StepCounter(nextStepCounter);
 
     }
 
@@ -47,9 +44,6 @@ public class Scene4Handler : MonoBehaviour
         nextStepCounter++;
         switch (stepCounter)
         {
-            case 38:
-                ShowDialogue(stepCounter);
-                break;
             case 39:
                 ShowDialogue(stepCounter);
                 break;
@@ -78,10 +72,13 @@ public class Scene4Handler : MonoBehaviour
                 ShowDialogue(stepCounter);
                 break;
             case 48:
-                Step48();
+                ShowDialogue(stepCounter);
                 break;
             case 49:
                 Step49();
+                break;
+            case 50:
+                Step50();
                 break;
             default:
                 break;
@@ -89,7 +86,7 @@ public class Scene4Handler : MonoBehaviour
         }
     }
 
-    private void Step48()
+    private void Step49()
     {
         LeanTween.moveY(dailougeHolder.gameObject, -200, 1f).setOnComplete(() =>
         {
@@ -121,7 +118,7 @@ public class Scene4Handler : MonoBehaviour
 
     }
 
-    private void Step49() 
+    private void Step50() 
     {
         SceneManager.LoadScene("Notes Speller");
     }
@@ -129,31 +126,34 @@ public class Scene4Handler : MonoBehaviour
     {
         queenImage.gameObject.transform.localPosition = (IsContinueDialouge(stepCounter)) ? new Vector2(queenImage.transform.localPosition.x, queenImage.transform.localPosition.y) : new Vector2(-1000, queenImage.transform.localPosition.y);
         selectCharacteImage.gameObject.transform.localPosition = new Vector2(1000, -100f);
-        dialougeText.gameObject.transform.localScale = Vector2.zero;
+        //dialougeText.gameObject.transform.localScale = Vector2.zero;
         nextStepOverlay.interactable = false;
+        dialougeText.text = string.Empty;
+        StopAllCoroutines();
 
 
         if (steps.steps[stepCounter].isQueen)
         {
             LeanTween.moveLocalX(queenImage.gameObject, 400, 1f).setOnComplete(() =>
             {
-                dialougeText.text = steps.steps[stepCounter].dailouge;
-                LeanTween.scale(dialougeText.gameObject, Vector2.one, 1f).setOnComplete(() =>
-                {
-                    Invoke("NextStepOverlay", 1f);
-                });
+                StartCoroutine(WriteText(steps.steps[stepCounter].dailouge));
+                //dialougeText.text = steps.steps[stepCounter].dailouge;
+                //LeanTween.scale(dialougeText.gameObject, Vector2.one, 1f).setOnComplete(() =>
+                //{   
+                //    Invoke("NextStepOverlay", 1f);
+                //});
             });
         }
         else
         {
             LeanTween.moveLocalX(selectCharacteImage.gameObject, -150, 1f).setOnComplete(() =>
             {
-                Debug.Log(selectCharacteImage.gameObject.transform.position);
-                dialougeText.text = steps.steps[stepCounter].dailouge;
-                LeanTween.scale(dialougeText.gameObject, Vector2.one, 1f).setOnComplete(() =>
-                {
-                    Invoke("NextStepOverlay", 1f);
-                });
+                StartCoroutine(WriteText(steps.steps[stepCounter].dailouge));
+                //dialougeText.text = steps.steps[stepCounter].dailouge;
+                //LeanTween.scale(dialougeText.gameObject, Vector2.one, 1f).setOnComplete(() =>
+                //{
+                //    Invoke("NextStepOverlay", 1f);
+                //});
             });
         }
     }
@@ -191,5 +191,16 @@ public class Scene4Handler : MonoBehaviour
         nextStepOverlay.interactable = true;
     }
 
+    IEnumerator WriteText(string fullText)
+    {
+        int writtenCounter = 0;
+        Invoke("NextStepOverlay", 1f);
+        for (int i = 0; i < fullText.Length; i++)
+        {
+            writtenCounter++;
+            dialougeText.text += fullText[i];
 
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
 }
