@@ -9,7 +9,8 @@ public class Users
 
 [System.Serializable]
 public class UserProfile
-{
+{   
+    public int id;
     public string name;
     public string password;
     public string character;

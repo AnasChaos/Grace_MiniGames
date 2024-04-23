@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class UIManager : MonoBehaviour
@@ -44,10 +45,12 @@ public class UIManager : MonoBehaviour
         if (nextScreen != null)
         {
             nextScreen.transform.localScale = Vector3.zero;
+            nextScreen.SetActive(true);
         }
         LeanTween.scale(currentScreen, Vector3.zero, duration)
                .setOnComplete(() =>
                {
+                   currentScreen.SetActive(false);
                    if (nextScreen != null)
                    {
                        LeanTween.scale(nextScreen, Vector3.one, duration).setOnComplete(() =>
@@ -78,10 +81,25 @@ public class UIManager : MonoBehaviour
 
     public Sprite GetSelectedCharacter() 
     {
-        return PlayerPrefs.GetString(Global.selectedCharaterKey) == "Castian" ? characters[0] : characters[1];
+        return PlayerPrefs.GetString(GameManager.instance.userProfile.character) == "Castian" ? characters[0] : characters[1];
     }
     public string GetUserName()
     {
         return PlayerPrefs.GetString("userName");
+    }
+
+    public void RegisterUser(UserProfile userProfile) 
+    {
+        GameManager.instance.RegisterUser(userProfile);
+    }
+
+    public void SaveUserState(string stateUserState) 
+    {
+        GameManager.instance.SaveUserState(stateUserState);
+    }
+
+    public void SaveUserProfile(UserProfile userProfile) 
+    {
+        GameManager.instance.SaveUserProfile(userProfile);
     }
 }

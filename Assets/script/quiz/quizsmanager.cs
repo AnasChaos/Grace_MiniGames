@@ -58,12 +58,12 @@ public class quizsmanager : MonoBehaviour
             if (SceneManager.GetActiveScene().name.Equals("Tower")) 
             {
                 SceneManager.LoadScene("Scene2");
-                PlayerPrefs.SetString(Global.saveState, "Scene2");
+                UIManager.instance.SaveUserState("Scene2");
             }
             else 
             {
                 SceneManager.LoadScene("Scene3");
-                PlayerPrefs.SetString(Global.saveState, "Scene3");
+                UIManager.instance.SaveUserState("Scene3");
             }
             //Result();
             return;

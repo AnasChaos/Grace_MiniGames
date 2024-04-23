@@ -26,9 +26,9 @@ public class MenuScreen : MonoBehaviour
     }
     public void StartGame()
     {
-        if (PlayerPrefs.HasKey(Global.selectedCharaterKey)) 
+        if (GameManager.instance.userProfile != null) 
         {
-            sceneTransistion.StartTransisation(PlayerPrefs.GetString(Global.saveState,"Scene1"));
+            sceneTransistion.StartTransisation(GameManager.instance.userProfile.saveState);
         }
         else
         {
@@ -45,7 +45,6 @@ public class MenuScreen : MonoBehaviour
     public void CharaterSelection(string charaterName) 
     {        
         selectedCharater = charaterName;
-        PlayerPrefs.SetString("selectedCharacter" , selectedCharater);
         UIManager.instance.ShowPopup(charaterSelectionPanel,false, ShowVideo);
     }
 
